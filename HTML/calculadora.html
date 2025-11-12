@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Carbono 🌱</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='calculadora.css') }}">
+</head>
+<body>
+    <main>
+        <form method="POST" aria-label="Calculadora de emissões de carbono">
+            <h1>Calculadora de Carbono 🌱</h1>
+
+            <label>Distância percorrida (km/mês):</label>
+            <input type="number" name="distancia" step="any" min="0" required>
+
+            <label>Tipo de transporte:</label>
+            <select name="transporte" required>
+                <option value="">Selecione...</option>
+                <option value="carro">Carro</option>
+                <option value="moto">Moto</option>
+                <option value="onibus">Ônibus</option>
+                <option value="aviao">Avião</option>
+            </select>
+
+            <label>Combustível (para carro):</label>
+            <select name="combustivel">
+                <option value="">Selecione...</option>
+                <option value="gasolina">Gasolina</option>
+                <option value="etanol">Etanol</option>
+                <option value="diesel">Diesel</option>
+                <option value="gnv">GNV</option>
+            </select>
+
+            <label>Energia (kWh/mês):</label>
+            <input type="number" name="kwh" step="any" min="0" required>
+
+            <label>Botijões de gás/mês:</label>
+            <input type="number" name="botijoes" step="any" min="0" required>
+
+            <label>Lixo produzido (kg/mês):</label>
+            <input type="number" name="lixo" step="any" min="0" required>
+
+            <label>Projeto de compensação:</label>
+            <select name="projeto" required>
+                <option value="">Selecione...</option>
+                <option value="reflorestamento">Reflorestamento (R$45)</option>
+                <option value="solar">Energia Solar (R$50)</option>
+                <option value="amazonia">Conservação da Amazônia (R$60)</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+
+            {% if resultado %}
+            <section class="resultado">
+                <h3>Resultado:</h3>
+                <p><strong>Emissões:</strong> {{ emissao|round(2) }} kg CO₂ ({{ ton|round(3) }} toneladas)</p>
+                <p><strong>Créditos necessários:</strong> {{ creditos|round(3) }}</p>
+                <p><strong>Custo total:</strong> R$ {{ custo|round(2) }}</p>
+            </section>
+            {% elif erro %}
+            <section class="resultado erro">
+                <h3>Erro:</h3>
+                <p>{{ erro }}</p>
+            </section>
+            {% endif %}
+
+            <footer>
+                <a href="/" class="voltar">⬅️ Voltar ao menu principal</a>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>

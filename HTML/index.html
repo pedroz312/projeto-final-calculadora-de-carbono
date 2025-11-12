@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora de Carbono</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />  
+  <link rel="stylesheet" href="{{ url_for('static', filename='menu.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Calculadora de Carbono</h1>
+      <p class="lead">Descubra o impacto das suas atividades no planeta e encontre maneiras de reduzi-lo</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <i id="hamburguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+      <ul id="itens">
+        <li><a href="#why">Por que calcular?</a></li>
+        <li><a href="#applications">Como funciona</a></li>
+        <li><a href="#case-study">Exemplo prático</a></li>
+        <li><a href="#benefits">Benefícios</a></li>
+        <li><a href="/calculadora">Calculadora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Entenda e reduza sua pegada de carbono</h2>
+      <p>Com a nossa calculadora, você identifica o quanto suas ações emitem de CO₂ e aprende estratégias sustentáveis para equilibrar o impacto ambiental.</p>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <section id="why">
+      <h2 class="section-title">Por que calcular sua pegada de carbono?</h2>
+      <div class="card-container" role="list">
+
+        <article class="card" role="listitem" tabindex="0" aria-label="Conscientização ambiental">
+          <div class="icon" aria-hidden="true">🌍</div>
+          <h3>Conscientização ambiental</h3>
+          <p>Compreender o impacto de suas escolhas diárias é o primeiro passo para uma vida mais sustentável.</p>
+        </article>
+
+        <article class="card" role="listitem" tabindex="0" aria-label="Redução de emissões">
+          <div class="icon" aria-hidden="true">🌱</div>
+          <h3>Redução de emissões</h3>
+          <p>Identifique os pontos de maior emissão e descubra alternativas de baixo carbono para seu estilo de vida.</p>
+        </article>
+
+        <article class="card" role="listitem" tabindex="0" aria-label="Sustentabilidade coletiva">
+          <div class="icon" aria-hidden="true">🤝</div>
+          <h3>Sustentabilidade coletiva</h3>
+          <p>Juntos, indivíduos e instituições podem fazer a diferença para mitigar as mudanças climáticas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="applications">
+      <h2 class="section-title">Como funciona a Calculadora de Carbono</h2>
+      <ul>
+        <li>Informe seus hábitos de transporte, alimentação e consumo de energia.</li>
+        <li>O sistema calcula automaticamente suas emissões estimadas de CO₂.</li>
+        <li>Receba sugestões práticas para reduzir sua pegada de carbono.</li>
+        <li>Compare resultados e acompanhe sua evolução ao longo do tempo.</li>
+        <li>Compartilhe seus resultados e inspire outros a agir.</li>
+      </ul>
+    </section>
+
+    <section id="case-study" class="case-study">
+      <h2>Exemplo prático: Universidade Verde</h2>
+      <p>A Universidade Verde implementou o uso da Calculadora de Carbono entre estudantes e funcionários e alcançou resultados impressionantes:</p>
+      <ul>
+        <li>Redução de 25% nas emissões associadas ao transporte em dois anos.</li>
+        <li>Implantação de programas de reflorestamento e reciclagem.</li>
+        <li>Criação de disciplinas sobre sustentabilidade e responsabilidade climática.</li>
+        <li>Certificação ambiental nível ouro.</li>
+      </ul>
+    </section>
+
+    <section id="benefits">
+      <h2 class="section-title">Benefícios para a comunidade</h2>
+      <div class="card-container" role="list">
+        <article class="card" role="listitem" tabindex="0" aria-label="Para instituições">
+          <h3>Para instituições</h3>
+          <p>Planejamento de ações sustentáveis e políticas de redução de carbono com base em dados concretos.</p>
+        </article>
+        <article class="card" role="listitem" tabindex="0" aria-label="Para pesquisadores">
+          <h3>Para pesquisadores</h3>
+          <p>Dados reais para estudos sobre comportamento, emissões e mitigação climática.</p>
+        </article>
+        <article class="card" role="listitem" tabindex="0" aria-label="Para cidadãos">
+          <h3>Para cidadãos</h3>
+          <p>Entendimento do impacto pessoal e incentivo à adoção de práticas mais ecológicas.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+   <footer>
+    <div class="footer-container">
+      <p>© 2025 - Avaliação Emergética nas Universidades</p>
+      <p>Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+
+  <script>
+    function clickMenu() {
+      if (itens.style.display == 'block') {
+        itens.style.display = 'none';
+      } else {
+        itens.style.display = 'block';
+      }
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
