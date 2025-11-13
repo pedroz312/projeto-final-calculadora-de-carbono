@@ -1,25 +1,25 @@
-/* Menu de navegação */
+
 nav {
   background: #228B22;
 }
 
 nav .container {
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo do contêiner */
-  align-items: center; /* Alinha verticalmente */
+  justify-content: center; 
+  align-items: center; 
 }
 
 nav ul {
   list-style: none;
-  display: flex; /* Mantenha o menu em linha por padrão */
-  flex-wrap: nowrap; /* Não permita que os itens quebrem para a linha de baixo */
-  margin: 0; /* Remove margens padrão */
-  padding: 0; /* Remove preenchimento padrão */
+  display: flex; 
+  flex-wrap: nowrap; 
+  margin: 0; 
+  padding: 0; 
 }
 
 nav ul li {
-  margin: 0 15px; /* Espaçamento entre os itens */
-  text-align: center; /* Centraliza o texto dentro do item */
+  margin: 0 15px; 
+  text-align: center; 
 }
 
 nav ul li a {
@@ -37,7 +37,7 @@ nav ul li a:focus {
   outline: none;
 }
 
-/* Estilo para o ícone do menu */
+
 i#hamburguer { 
   background-color: #3CB371;
   color: white;
@@ -52,26 +52,26 @@ i#hamburguer:hover {
   color: white;
 }
 
-/* Responsividade */
+
 @media (max-width: 600px) {
   nav ul {
-    flex-direction: column; /* Muda para coluna em telas pequenas */
+    flex-direction: column; 
     width: 100%;
     max-width: 320px;
-    display: none; /* Inicialmente oculto */
+    display: none; 
   }
 
   nav ul.show {
-    display: flex; /* Exibe o menu quando a classe 'show' é adicionada */
+    display: flex;
   }
 
   nav .container {
-    flex-direction: column; /* Alinha o ícone e o menu verticalmente */
+    flex-direction: column; 
     align-items: center;
   }
 
   nav ul li {
-    width: 100%; /* Faz com que cada item ocupe toda a largura */
-    text-align: center; /* Centraliza o texto dentro do item */
+    width: 100%; 
+    text-align: center; 
   }
 }

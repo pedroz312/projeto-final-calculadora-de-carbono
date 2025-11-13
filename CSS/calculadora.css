@@ -1,6 +1,4 @@
-/* ===========================
-   ESTILO GERAL
-=========================== */
+
 :root {
   --verde: #2e7d32;
   --verde-escuro: #1b5e20;
@@ -21,9 +19,7 @@ body {
   padding: 0;
 }
 
-/* ===========================
-   CONTAINER PRINCIPAL
-=========================== */
+
 main {
   display: flex;
   justify-content: center;
@@ -32,9 +28,7 @@ main {
   padding: 2rem 1rem;
 }
 
-/* ===========================
-   FORMULÁRIO
-=========================== */
+
 form {
   background: var(--branco);
   padding: 2rem;
@@ -74,9 +68,7 @@ select:focus {
   outline: none;
 }
 
-/* ===========================
-   BOTÃO
-=========================== */
+
 button {
   width: 100%;
   background: var(--verde);
@@ -94,9 +86,7 @@ button:hover {
   background: var(--verde-escuro);
 }
 
-/* ===========================
-   RESULTADO
-=========================== */
+
 .resultado {
   background: #e8f5e9;
   padding: 1rem;
@@ -126,9 +116,7 @@ button:hover {
   }
 }
 
-/* ===========================
-   LINK VOLTAR
-=========================== */
+
 footer {
   text-align: center;
   margin-top: 1.5rem;
@@ -145,9 +133,7 @@ footer .voltar:hover {
   color: var(--verde-escuro);
 }
 
-/* ===========================
-   RESPONSIVIDADE
-=========================== */
+
 @media (max-width: 480px) {
   form {
     padding: 1.5rem;

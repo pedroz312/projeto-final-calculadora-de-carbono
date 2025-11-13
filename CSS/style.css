@@ -1,4 +1,4 @@
- /* Reset básico */
+ 
     * {
       margin: 0;
       padding: 0;
@@ -15,7 +15,7 @@
       max-width: 1200px;
       margin: auto;
     }
-    /* Cabeçalho */
+   
     header {
       background-color:#228B22;
       color: white;
@@ -30,7 +30,8 @@
       font-size: 1.1rem;
       color: #ecf0f1;
     }
-    /* Menu de navegação */
+    
+
     nav {
       background:#3CB371;
     }
@@ -59,7 +60,7 @@
       color: #e74c3c;
       outline: none;
     }
-    /* Hero */
+    
     .hero {
   background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
   background-size: cover;
@@ -92,7 +93,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-    /* Seções e Conteúdo */
+    
     main.container {
       max-width: 1200px;
       margin: auto;
@@ -105,7 +106,7 @@
       margin-bottom: 20px;
       font-size: 1.8rem;
     }
-    /* Cards */
+    
     .card-container {
       display: flex;
       flex-wrap: wrap;
@@ -157,7 +158,7 @@
       color: white;
       box-shadow: 0 4px 15px rgba(52, 152, 219, 0.6);
     }
-    /* Lista */
+    
     ul {
       list-style: inside disc;
       margin-left: 0;
@@ -168,7 +169,7 @@
       line-height: 1.5;
       font-size: 1.05rem;
     }
-    /* Case Study */
+    
     .case-study {
       background-color:#8B4513;
       color: white;
@@ -186,7 +187,7 @@
       margin-bottom: 10px;
       font-weight: 600;
     }
-    /* Footer */
+   
     footer {
       background-color:#8B4513;
       color: white;
@@ -232,7 +233,7 @@ ease;
     padding: 0;
     box-sizing: border-box;
 }
-    /* Responsividade */
+    
     @media (max-width: 992px) {
       .card-container {
         justify-content: center;
